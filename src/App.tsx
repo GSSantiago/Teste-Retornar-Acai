@@ -1,14 +1,12 @@
 import { useContext } from 'react';
 import { OrderContext } from './context/order';
 
+import { Header } from './components/Header';
 import { ResumeProduct } from './components/ResumeProduct';
 import { SelectProduct } from './components/SelectProduct';
-import { Header } from './components/Header';
-
-import styles from './styles/home.module.css';
 import { Footer } from './components/Footer';
 
-
+import styles from './styles/home.module.css';
 
 export function App() {
   
@@ -18,9 +16,9 @@ export function App() {
     <>
     <Header/>
       <main className={styles.contentWrapper}>
-        {isOrderFinished ? 
-        <ResumeProduct/>
-        :<SelectProduct/> }
+          {isOrderFinished ? 
+          <ResumeProduct/>
+          :<SelectProduct/> }
       </main>
     <Footer/>
     </>

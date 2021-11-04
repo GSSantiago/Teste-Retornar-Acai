@@ -1,18 +1,4 @@
-import React, { createContext, ReactNode, useContext, useState } from "react";
-
-type teste = {
-    id: number,
-    text: string,
-    price?: number,
-    time?: number,
-}
-
-type FinalOrder ={
-    id: number,
-    text: string,
-    price?: number,
-    time?: number,
-}
+import { createContext, ReactNode, useState } from "react";
 
 type OrderContextData = {
   isOrderFinished: boolean,
@@ -23,15 +9,14 @@ type OrderContextData = {
   setIsdisable: (value: boolean)=> void
 
 }
-//(FinalOrder)[]
 
 export const OrderContext = createContext({} as OrderContextData);
 
-type OrderProvider = {
+type Orderprovider = {
     children: ReactNode;
    }
 
-export default function OrderProvider(props: OrderProvider){
+export function OrderProvider(props: Orderprovider){
 
     const [isOrderFinished, setOrderFinished] = useState(false);
     const [finalOrder, setFinalOrder] = useState([{}, {}, {price:0}]);

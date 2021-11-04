@@ -4,52 +4,34 @@ import styles from './ButtonOption.module.css'
 
 export function ButtonOption(props: any){
 
-    const {finalOrder,setFinalOrder,isDisable , setIsdisable} = useContext(OrderContext);
+    const {finalOrder,setFinalOrder,setIsdisable} = useContext(OrderContext);
         
     const [toogle, setToogle] = useState<number>();
 
     function selectOption(option: string | object, id: number) {
-      
+
         const arrayHolder = finalOrder;
-        
-        if(props.IsfinishedFlavor){
+
+        const checkToogle = (arrayPos:number)=>{
             if(toogle === id){
+                arrayHolder[arrayPos] = {price:0};
                 setToogle(undefined)
-                arrayHolder[2] = {};
              }
             else{
-                arrayHolder[2] = option;
-                setToogle(id);
+                arrayHolder[arrayPos] = option;
+                setToogle(id)
              } 
-            return
+             setIsdisable(!((Object.keys(finalOrder[0]).length===2)
+                           &&Object.keys(finalOrder[1]).length===4))
         }
 
-        if(Object.keys(option).length===2){
-            if(toogle === id){
-                setToogle(undefined)
-                arrayHolder[0] = {};
-             }
-            else{
-                arrayHolder[0] = option;
-                setToogle(id);
-             } 
-        }
-        else{
-            if(toogle === id){
-                setToogle(undefined)
-                arrayHolder[1] = {};
-             }
-             else{
-                arrayHolder[1] = option;
-                setToogle(id);
-             }
-        }
-        
+        if(props.IsfinishedFlavor)
+            checkToogle(2);
+        else          
+            (Object.keys(option).length===2 ? checkToogle(0) : checkToogle(1))
+      
         setFinalOrder(arrayHolder);
         
-        if(((Object.keys(finalOrder[0]).length===2) && Object.keys(finalOrder[1]).length===4)
-          ||(Object.keys(finalOrder[0]).length===0) && Object.keys(finalOrder[1]).length===0){
-                setIsdisable(!isDisable)}
     }
 
     return(

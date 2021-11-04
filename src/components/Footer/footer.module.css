@@ -15,3 +15,17 @@
     margin-right:50px;
     text-align: center;
 }
+
+@media only screen and (max-width: 640px) 
+{
+    .contentWrapper{
+        position:relative;
+        margin:0;
+        justify-content: center;
+    }
+    .contentWrapper h4{
+        margin:0;
+    }
+
+
+}

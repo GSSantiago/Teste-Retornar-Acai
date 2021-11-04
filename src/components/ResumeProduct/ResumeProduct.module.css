@@ -32,22 +32,6 @@
     justify-content:space-between;
 }
 
-.acaiOptions{
-    background-color:transparent;
-    border-color:#afafaf;
-    border-radius:5px;
-    color:#afafaf;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:600;
-    padding: 12px;
-    width:180px;
-}
-
-.acaiOptionsClicked{
-  display:none;
-}
-
 .nextButton{
     background-color:transparent;
     border-color:#6e43a3;

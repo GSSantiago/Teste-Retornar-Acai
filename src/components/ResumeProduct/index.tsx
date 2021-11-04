@@ -12,7 +12,7 @@ export function ResumeProduct(){
 
     useEffect(()=>{
         api.post('order', finalOrder)
-    }, [])       
+    }, )       
 
     return(
         <section className={styles.content}>

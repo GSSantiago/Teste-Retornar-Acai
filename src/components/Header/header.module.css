@@ -21,3 +21,9 @@
     padding-top:20px;
     width: 50px;
 }
+
+@media only screen and (max-width: 640px) {
+    .contentWrapper{
+        position:relative;
+    }
+  }
