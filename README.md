@@ -40,6 +40,8 @@ https://mockapi.io/
 <img src="https://github.com/GSSantiago/Teste-Retornar-Acai/blob/main/InitialScreen.png" alt="Initial Screen" align="center">
 <img src="https://github.com/GSSantiago/Teste-Retornar-Acai/blob/main/AddonScreen.png" alt="AddonScreen" align="center">
 <img src="https://github.com/GSSantiago/Teste-Retornar-Acai/blob/main/ResumeScreen.png" alt="ResumeScreen" align="center">
+<img src="https://github.com/GSSantiago/Teste-Retornar-Acai/blob/main/ScreenGif.gif" alt="Screen Gif" align="center">
+
 
 ##  Download e Teste
 
@@ -60,7 +62,7 @@ v14.15.4
  git clone https://github.com/GSSantiago/Teste-Retornar-Acai
 
 #Entrar no diretório
- cd retornar_acai
+ cd Teste-Retornar-Acai
 
 #Instalar as dependências
  yarn
