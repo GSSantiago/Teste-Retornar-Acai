@@ -1,0 +1,31 @@
+.acaiOptions{
+    background-color:transparent;
+    border-color:#afafaf;
+    border-radius:5px;
+    color:#afafaf;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    padding: 12px;
+    width:180px;
+}
+
+.acaiOptions:hover{
+    border-color:#6e43a3;
+    color:#6e43a3;
+}
+
+
+.acaiOptionsClicked{
+    border-color:#6e43a3;
+    color:#6e43a3;
+}
+
+.buttonWrapper{
+    column-gap:26px;
+    row-gap:30px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}

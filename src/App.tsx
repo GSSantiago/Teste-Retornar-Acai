@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from 'react';
+import { OrderContext } from './context/order';
 
-function App() {
+import { ResumeProduct } from './components/ResumeProduct';
+import { SelectProduct } from './components/SelectProduct';
+import { Header } from './components/Header';
+
+import styles from './styles/home.module.css';
+import { Footer } from './components/Footer';
+
+
+
+export function App() {
+  
+  const {isOrderFinished} = useContext(OrderContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+      <main className={styles.contentWrapper}>
+        {isOrderFinished ? 
+        <ResumeProduct/>
+        :<SelectProduct/> }
+      </main>
+    <Footer/>
+    </>
   );
 }
 
-export default App;
+

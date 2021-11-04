@@ -1,0 +1,23 @@
+.contentWrapper{
+    align-items: center;
+    background: linear-gradient(180deg, rgba(169,84,205,1) 22%, rgba(123,31,162,1) 101%);
+    border-radius:0px 0px 20px 20px;
+    column-gap: 6px;
+    display:flex;
+    height:100px;
+    justify-content: center;
+    position: absolute;
+    width:100vw;
+}
+
+.contentWrapper h1{
+    color:#fdfbff;
+    padding-top:20px;
+    text-align: center;
+}
+
+.contentWrapper img{
+    height:80px;
+    padding-top:20px;
+    width: 50px;
+}

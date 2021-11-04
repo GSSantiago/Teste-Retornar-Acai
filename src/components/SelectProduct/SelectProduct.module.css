@@ -1,0 +1,51 @@
+
+.content{
+    background-color:white;
+    border-radius:5px;
+    max-width:800px;
+    padding:24px;
+
+}
+
+
+.content h1{
+    font-size:22px;
+    font-weight: 600;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+.content h3{
+    font-size:16px;
+    margin: 1.5rem 0;
+}
+
+.buttonWrapper{
+    column-gap:26px;
+    row-gap:30px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.nextButton{
+    background-color:transparent;
+    border-color:#6e43a3;
+    border-radius:5px;
+    color:#6e43a3;
+    cursor:pointer;
+    float:right;
+    font-size:16px;
+    font-weight:600;
+    margin-top: 12px;
+    padding: 9px 12px;
+    width:156px;
+}
+
+.nextButton:disabled{
+    border-color:#afafaf;
+    color:#afafaf;
+    cursor:default;
+}
+

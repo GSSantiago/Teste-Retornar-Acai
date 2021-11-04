@@ -1,0 +1,63 @@
+
+.content{
+    background-color:white;
+    border-radius:5px;
+    padding:24px 24px 34px 24px;
+
+}
+
+
+.content h1{
+    font-size:22px;
+    font-weight: 600;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+.content h3{
+    font-size:16px;
+    margin: 1.5rem 0;
+}
+
+.valuesOrder{
+    font-weight:bold;
+    margin-top:30px;
+}
+
+.acaiOptionsWrapper{
+    column-gap:28rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.acaiOptions{
+    background-color:transparent;
+    border-color:#afafaf;
+    border-radius:5px;
+    color:#afafaf;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    padding: 12px;
+    width:180px;
+}
+
+.acaiOptionsClicked{
+  display:none;
+}
+
+.nextButton{
+    background-color:transparent;
+    border-color:#6e43a3;
+    border-radius:5px;
+    color:#6e43a3;
+    cursor:pointer;
+    float:right;
+    font-size:16px;
+    font-weight:600;
+    margin-top: 12px;
+    padding: 9px 12px;
+    width:156px;
+}

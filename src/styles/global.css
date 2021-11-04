@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+font-family: Roboto, sans-serif;
+
+}
+
+body{
+    
+    background: #7b1fa2;
+}
+
+h1, h2, h3, p {
+    color:#72479b;
+}

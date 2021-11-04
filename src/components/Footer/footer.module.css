@@ -1,0 +1,17 @@
+.contentWrapper{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(169,84,205,1) -18%, rgba(123,31,162,1) 80%);
+    border-radius:20px 20px 0 0;
+    display:flex;
+    height:100px;
+    justify-content: right;
+    position: absolute;
+    margin-top:-100px;
+    width:100vw;  
+}
+
+.contentWrapper h4{
+    color:#fdfbff;
+    margin-right:50px;
+    text-align: center;
+}
