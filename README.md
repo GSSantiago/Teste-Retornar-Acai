@@ -24,7 +24,8 @@ de entrega ao final da montagem.
 
 As tecnologias utilizadas durante o teste foram:
 
-- 💠 **React.Js** — Para construção da página com HTML, CSS, e Typescript
+- 💠 **React.Js** — Para construção da página com HTML, CSS, e Typescript.
+- **Axios**   - Para conexão com a API 
 
 
 ## Tecnologias Back-End
